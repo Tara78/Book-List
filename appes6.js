@@ -59,6 +59,7 @@ class UI{
 // Local Storge class
 class Store {
 // Fetch from Local storage
+// Static Mthod to fixed-configuration, or any other data.
   static getBooks(){
     let books;
     if(localStorage.getItem('books')=== null){
