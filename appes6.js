@@ -124,7 +124,7 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
     // Add book to List
     ui.addBookToList(book);
     // Alert add book
-    ui.showAlert('Book is in yout list now', 'success')
+    ui.showAlert('Book added to your book-list', 'success')
 
     // Add to local Storge
     Store.addBook(book);
@@ -151,5 +151,5 @@ document.getElementById('book-list').addEventListener('click', function (e) {
   Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 
   // Show alert
-  ui.showAlert('Book Removed', 'success');
+  ui.showAlert('Book removed from your book-list', 'success');
 })
